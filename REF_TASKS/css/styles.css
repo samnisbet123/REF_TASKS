@@ -1,0 +1,72 @@
+/* /* .list:nth-child(1)::marker {
+
+    color: rgb(179, 224, 54)
+ */
+
+/* Reset default spacing for nav */
+nav ul,
+nav li,
+nav li a {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  list-style: none;
+}
+
+/* Flex container for nav */
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* prevent stretching */
+}
+
+/* li styling */
+nav li {
+  width: 100px;       /* matches JS width if needed */
+  text-align: center; 
+  margin: 5px;        /* JS can also override */
+}
+
+
+
+/* Make <a> fill the li */
+nav li a {
+  display: block;
+  padding: 1rem;      /* consistent padding */
+  font-family: calibri;
+  text-decoration: none;
+  line-height: 1;
+}
+nav li a:hover {
+  background-color: #b362f4;
+  color: rgb(239, 242, 244) !important;
+}
+#sub {
+ display: flex;
+ align-items: flex-start;
+ margin-bottom: 2rem;
+  justify-content: center;
+
+}
+
+#form {
+ display: flex;
+  justify-content: center;
+
+}
+
+#top-section{
+
+ height: 100vh;
+}
+#sub {
+  background: url("../images/test_image.jpg")no-repeat center ;
+  background-size: cover;
+  width: 100%;
+  min-height: 300px;       /* ensures the section has visible height */
+  padding-top: 200px;      /* space for your subscribe form/button */
+
+}
+.subbed, INPUT {
+    border: 0
+}

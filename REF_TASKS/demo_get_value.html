@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Value</title>
+  </head>
+  <body>
+    <!-- HTML input field & button  -->
+    <input type="text" id="pwd" />
+    <button id="btnVal">GET VALUE</button>
+
+    <script>
+        // reference the input field with an ID of pwd
+      let inputElem = document.getElementById("pwd");
+      //attach an event listener that calls a function named
+      //dispalyVal when clikced
+      document.getElementById("btnVal").addEventListener("click", displayVal);
+      //DisplayVal function rruns
+      function displayVal() {
+        //The value inside the input is retrieved using .value
+        let inputVal = inputElem.value;
+        //Display the value in an alert box
+        alert(inputVal);
+      }
+    </script>
+  </body>
+</html>
